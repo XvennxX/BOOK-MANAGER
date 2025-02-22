@@ -8,7 +8,7 @@ class BookManager {
   constructor() {
     this.books = [];
     this.attachEventListeners();
-    this.loadBooks(); 
+    this.loadBooks();
   }
 
   addBook = (event) => {
@@ -44,7 +44,7 @@ class BookManager {
 
   editBook = (event) => {
     const row = event.target.closest('tr');
-    const nameCell = row.children[0];  
+    const nameCell = row.children[0];
     const authorCell = row.children[1];
 
     const bookNameInput = document.createElement('input');
